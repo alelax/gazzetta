@@ -66,7 +66,6 @@ nav {
   font-weight: 400;
   text-align: left;
   width: 17%;
-  float: left;
 }
 
 li img {
@@ -179,13 +178,17 @@ figcaption {
 /*  *************** sub article *************** */
 
 .sub-article  {
-  width: 50%;
+  width: 47%;
   position: relative;
+}
+
+.sub-article:not(:last-of-type) {
+  margin-right: 6%;
 }
 
 .sub-article .box img {
   width: 100%;
-  height: 125px;
+  height: 130px;
   display: block;
 }
 
@@ -199,7 +202,8 @@ figcaption {
   height: 50px;
   border-top: 1px solid grey;
   color: #FFF;
-  margin-bottom: 20px;
+  margin: 5px 0 15px;
+  padding-top: 5px ;
 }
 
 .main-article ul {
@@ -209,14 +213,8 @@ figcaption {
   top: calc(100% / 2);
   transform: translateY(-50%);
 }
-.main-article .extra-box li{
- display: inline;
-}
 
-.main-article .extra-box a {
-  color: #FFF;
-  font-size: 18px;
-}
+
 /*  ********************************************* */
 
 
@@ -244,10 +242,6 @@ figcaption {
 
 .layover {
   background: rgba(0, 0, 0, 0.5);
-}
-
- .info {
-
 }
 
 .article-subject {
@@ -280,10 +274,18 @@ figcaption {
 }
 
 .related-articles a {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
   color: #000;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 
