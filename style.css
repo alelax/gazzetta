@@ -23,7 +23,7 @@
 
 .top-page-contet {
   width: 100%;
-  border: 1px solid black;
+  margin-bottom: 35px;
 }
 
 .video-preview {
@@ -35,6 +35,22 @@
 
 .video-1 {
   background: url(img/video-preview1.jpg);
+  background-size: cover;
+}
+.video-2 {
+  background: url(img/video-preview2.jpg);
+  background-size: cover;
+}
+.video-3 {
+  background: url(img/video-preview3.jpg);
+  background-size: cover;
+}
+.video-4 {
+  background: url(img/video-preview4.jpg);
+  background-size: cover;
+}
+.video-5 {
+  background: url(img/video-preview5.jpg);
   background-size: cover;
 }
 
@@ -49,10 +65,11 @@
 .overlay .overlay-text {
   position: absolute;
   left: 0;
+  padding-left: 2px;
   width: 80%;
   color: #FFF;
   font-size: 13px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .overlay img {
