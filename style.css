@@ -1,10 +1,15 @@
+
+
 .wrapper {
   width: 1100px;
   margin: 0 auto;
 }
 
+/* *************** top-page-contet *************** */
+
 .top-page-contet {
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 
@@ -19,18 +24,22 @@
   background: url(img/video-preview1.jpg);
   background-size: cover;
 }
+
 .video-2 {
   background: url(img/video-preview2.jpg);
   background-size: cover;
 }
+
 .video-3 {
   background: url(img/video-preview3.jpg);
   background-size: cover;
 }
+
 .video-4 {
   background: url(img/video-preview4.jpg);
   background-size: cover;
 }
+
 .video-5 {
   background: url(img/video-preview5.jpg);
   background-size: cover;
@@ -61,11 +70,21 @@
   height: 100%;
 }
 
+/* ********************************************* */
+
+
+/* *************** left navigation bar *************** */
+
 nav {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   width: 17%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
 }
 
 li img {
@@ -84,19 +103,20 @@ li img {
   margin: 10px 0;
 }
 
-.menu :first-child:not(img) {
+.menu #Home:not(img) {
   font-size: 14px;
   font-weight: bolder;
   padding-bottom: 6px;
   border-bottom: 1px solid grey;
 }
 
+/* ********************************************* */
+
 main {
   float: left;
   margin-left: 2%;
   width: 81%;
   }
-
 
 main .central {
   width: 58%;
@@ -107,10 +127,6 @@ main .lateral {
   margin-left: 2%;
   width: 40%;
   float: left;
-}
-
-.clear{
- clear: both;
 }
 
 /*  *************** main article *************** */
@@ -134,6 +150,7 @@ main .lateral {
   color: #FFF;
   background-color: #db7a08;
 }
+
 .main-article .article-title {
   font-size: 38px;
   line-height: 35px;
@@ -166,6 +183,7 @@ figcaption {
   top: calc(100% / 2);
   transform: translateY(-50%);
 }
+
 .main-article .extra-box li{
  display: inline;
 }
@@ -173,6 +191,7 @@ figcaption {
 .main-article .extra-box a {
   color: #FFF;
 }
+
 /*  ********************************************* */
 
 
@@ -215,7 +234,6 @@ figcaption {
   transform: translateY(-50%);
 }
 
-
 /*  ********************************************* */
 
 
@@ -253,15 +271,28 @@ figcaption {
   font-size: 30px;
   line-height: 27px;
 }
-/*  ********************************************* */
 
+/*  ********************************************* */
 
 .box.advertising img {
   width: 100%;
   height: 300px;
   margin: 0 auto;
   border: 20px solid pink;
+}
 
+.banner {
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid grey;
+  text-align: center;
+}
+
+.banner img {
+  width: 80%;
+  position: relative;
+  top: calc(100% / 2);
+  transform: translateY(-50%);
 }
 
 
@@ -305,6 +336,7 @@ figcaption {
   font-size: 11px;
   font-weight: bold;
 }
+
 .article-title {
   font-size: 18px;
   font-weight: bold;
@@ -331,5 +363,21 @@ figcaption {
   float: right;
 }
 
+.clear{
+ clear: both;
+}
+
+.menu .live a::after {
+  float: right;
+  width: 30px;
+  content: "Live";
+  text-align: center;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 2px;
+  margin-right: 5px;
+}
 
 /* ************************************************************ */
