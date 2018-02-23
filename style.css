@@ -15,9 +15,8 @@
 }
 
 .wrapper {
-  width: 900px;
+  width: 950px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .top-page-contet {
@@ -82,15 +81,17 @@ nav {
   font-size: 11px;
   font-weight: 400;
   text-align: left;
-  padding-left: 8px;
+  width: 17%;
+  float: left;
 }
 
 li img {
   width: 15px;
   margin-right: 7px;
 }
+
 .menu {
-  width: 17%;
+
   list-style: none;
   border-width: 3px 1px 0 0;
   border-style: solid;
@@ -106,4 +107,32 @@ li img {
   font-weight: bolder;
   padding-bottom: 6px;
   border-bottom: 1px solid grey;
+}
+
+main {
+  float: left;
+  margin-left: 3%;
+  width: 80%;
+}
+
+main .central {
+  width: 60%;
+
+}
+
+main .lateral {
+  width: 40%;
+
+}
+
+main .central .main-art {
+  background: url(img/main-image.jpg);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+}
+
+main .central .main-art .info {
+
 }
