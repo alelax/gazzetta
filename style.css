@@ -115,7 +115,6 @@ main .lateral {
 
 /*  *************** main article *************** */
 
-
 .main-article .box {
   width: 100%;
   position: relative;
@@ -124,7 +123,7 @@ main .lateral {
 
 .main-article .box img {
   width: 100%;
-  display: block;
+  display: block; /* perchè con questo img si attacca ad extra-box altrimneti rimane del margine????? */
 }
 
 .main-article .article-subject {
@@ -142,6 +141,8 @@ main .lateral {
 
 .main-article .info{
   padding: 0 15px;
+  position: absolute;
+  bottom: 3px;
 }
 
 figcaption {
@@ -175,6 +176,49 @@ figcaption {
 /*  ********************************************* */
 
 
+/*  *************** sub article *************** */
+
+.sub-article  {
+  width: 50%;
+  position: relative;
+}
+
+.sub-article .box img {
+  width: 100%;
+  height: 125px;
+  display: block;
+}
+
+.sub-article .box .info{
+  margin-top: 5px;
+  display: block;
+}
+
+.sub-article .extra-box {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid grey;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.main-article ul {
+  width: 70%;
+  margin-left: 20px;
+  position: relative;
+  top: calc(100% / 2);
+  transform: translateY(-50%);
+}
+.main-article .extra-box li{
+ display: inline;
+}
+
+.main-article .extra-box a {
+  color: #FFF;
+  font-size: 18px;
+}
+/*  ********************************************* */
+
 
 
 
@@ -203,8 +247,7 @@ figcaption {
 }
 
  .info {
-  position: absolute;
-  bottom: 3px;
+
 }
 
 .article-subject {
@@ -237,6 +280,8 @@ figcaption {
 }
 
 .related-articles a {
+  font-size: 13px;
+  font-weight: bold;
   text-decoration: none;
   color: #000;
 }
