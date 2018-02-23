@@ -75,7 +75,6 @@ li img {
 }
 
 .menu {
-
   list-style: none;
   border-width: 3px 1px 0 0;
   border-style: solid;
@@ -97,7 +96,6 @@ main {
   float: left;
   margin-left: 3%;
   width: 80%;
-  
   }
 
 
@@ -111,17 +109,22 @@ main .lateral {
   float: left;
 }
 
-.banner{
+.clear{
  clear: both;
 }
-main .central .main-article {
+
+/*  *************** main article *************** */
+
+
+.main-article .box {
   width: 100%;
   position: relative;
   color: #FFF;
 }
 
-.main-article img {
+.main-article .box img {
   width: 100%;
+  display: block;
 }
 
 .main-article .article-subject {
@@ -133,12 +136,43 @@ main .central .main-article {
   background-color: #db7a08;
 }
 .main-article .article-title {
-  font-size: 35px;
+  font-size: 38px;
+  line-height: 35px;
 }
 
 .main-article .info{
   padding: 0 15px;
 }
+
+figcaption {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.main-article .extra-box {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid grey;
+  background: black;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.main-article ul {
+  width: 70%;
+  margin-left: 20px;
+  position: relative;
+  top: calc(100% / 2);
+  transform: translateY(-50%);
+}
+.main-article .extra-box li{
+ display: inline;
+}
+
+.main-article .extra-box a {
+  color: #FFF;
+}
+/*  ********************************************* */
 
 
 
@@ -165,10 +199,10 @@ main .central .main-article {
 }
 
 .layover {
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
 }
-.info {
+
+ .info {
   position: absolute;
   bottom: 3px;
 }
@@ -188,7 +222,8 @@ main .central .main-article {
 }
 
 .article-subject, .writer-and-date {
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: bold;
 }
 .article-title {
   font-size: 18px;
@@ -197,8 +232,13 @@ main .central .main-article {
 }
 
 .article-description {
-  font-size: 10px;
+  font-size: 14px;
   margin-bottom: 7px;
+}
+
+.related-articles a {
+  text-decoration: none;
+  color: #000;
 }
 
 
