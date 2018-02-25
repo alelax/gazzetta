@@ -142,6 +142,15 @@ main .lateral {
   display: block; /* perchè con questo img si attacca ad extra-box altrimneti rimane del margine????? */
 }
 
+#like {
+ position: absolute;
+ top: 5px;
+ right: 10px;
+ width: 50px;
+ text-align: center;
+ background-color: orange;
+}
+
 .main-article .article-subject {
   color: orange;
   width: 120px;
